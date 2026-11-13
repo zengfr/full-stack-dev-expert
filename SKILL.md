@@ -13,7 +13,7 @@ description: >
   等多栈路由，以软件工程宪法为最高工程原则，支持 Task subagent 委派与上下文内换装两种执行模式。
 metadata:
   package: full-stack-dev-expert
-  version: 1.2.2
+  version: 1.2.4
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
@@ -57,7 +57,8 @@ metadata:
 
 - **模式 A · Subagent 委派**（宿主提供 Task/子代理工具，推荐）：每个子角色一次委派，
   委派 prompt = 用户原话 + 交接单 + 该角色的 `agents/*.md` 全文要点 + 明确的输出要求 +
-  **宪法关键条款提示**（涉数据操作必附第 2 条，涉权限必附第 8/9 条）。
+  **宪法关键条款提示**（涉数据操作必附第 2 条，涉权限必附第 8/9 条，
+  涉外部系统/外部内容必附第 26/27 条）。
   子角色在隔离子会话中工作，返回产出摘要。
 - **模式 B · 上下文内换装**（宿主无子代理工具）：用 Read 加载对应 `agents/*.md`，
   宣布"现在以〈角色〉身份工作"，严格遵守该角色的输入/输出契约与红线，完成本阶段后
@@ -95,7 +96,7 @@ metadata:
 - `references/constitution.md` — 软件工程宪法（最高效力，全体角色必读）
 - `references/orchestration.md` — 调度协议：任务类型路由、管理后台路由、逆向融合(ORRI)路由、阶段裁剪、并行策略、失败处理
 - `references/stack-routing.md` — 技术栈路由：栈指纹探测、选型决策树、UI 层选型、多栈规范索引
-- `references/collaboration.md` — 协作协议：交接单契约、冲突仲裁、产出物目录约定
+- `references/collaboration.md` — 协作协议：交接单契约、冲突仲裁、产出物目录约定、输出处理与外部内容纪律
 - `agents/*.md` — 14 个子角色定义（输入契约 / 输出契约 / 工作流 / 红线 / 交接字段）
 - `references/standards/*.md` — 多栈编码规范：
   后端（java-spring / quarkus / node-nestjs / python-fastapi / golang / jpa-hibernate）、
