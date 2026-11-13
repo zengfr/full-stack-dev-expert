@@ -4,7 +4,8 @@
 > 真值源：`docs/requirements-spec.md`——只做故事化/场景化转译，不发明需求；
 > 无法映射到 FR 的故事/用例列 blocked_on 回需求分析师。
 > 受众：产品/开发/测试（迭代规划与沟通语言；实现细节见架构与契约文档）。
-> 边界：本文"用例"指行为场景（use case）；测试用例归测试工程师 test-plan，不在此重复。
+> 边界：本文"用例"指行为场景（use case）；测试用例归测试工程师 test-plan，不在此重复；
+> 图示化的业务流程与时序见 `docs/business-process.md`（互链不重复）。
 
 ## 1. 用户角色（Persona）
 

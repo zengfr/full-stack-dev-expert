@@ -45,6 +45,7 @@ templates/adr.md
 templates/ddd-design.md
 templates/dev-standards.md
 templates/roadmap.md
+templates/business-process.md
 templates/api-contract.md
 templates/ui-spec.md
 templates/reverse-analysis.md

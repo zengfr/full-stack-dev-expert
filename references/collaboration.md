@@ -39,6 +39,7 @@ docs/
 ├── ddd-design.md            # 领域设计与数据合同（技术文档工程师产出）
 ├── dev-standards.md         # 仓库结构与开发规范（技术文档工程师产出）
 ├── roadmap.md               # 实施路线与里程碑（技术文档工程师产出）
+├── business-process.md      # 业务流程与时序文档（技术文档工程师产出，真值源 requirements-spec + api-contract）
 ├── ui-spec.md               # UI/UX 规格（设计师产出，前端项目）
 ├── reverse-analysis.md      # 逆向分析报告（逆向融合工程师产出，ORRI）
 ├── api-contract.md          # API 契约（架构师起草，后端冻结）

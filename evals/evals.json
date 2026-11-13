@@ -1,6 +1,6 @@
 {
   "package": "full-stack-dev-expert",
-  "version": "1.3.2",
+  "version": "1.4.1",
   "description": "验收用例：验证总指挥调度正确性、管理后台路由、逆向融合(ORRI)路由、新技术栈选型门槛与各角色契约完整性",
   "cases": [
     {
@@ -197,6 +197,18 @@
         "runbook 处置命令未经 DevOps 验证的列 blocked_on，不发明运维操作；与 deploy-guide 互链不重复（部署归 deploy-guide，运行期处置归 runbook）",
         "CHANGELOG 采用 Keep a Changelog 格式（Unreleased + 版本化条目：新增/变更/修复/移除/弃用/安全），只记用户可感知变更，每条可追溯",
         "CHANGELOG.md 落项目根（与 README 同级），不入 docs/"
+      ]
+    },
+    {
+      "id": "EVAL-19",
+      "name": "业务流程与时序文档",
+      "input": "交付阶段，把核心业务流程和系统交互整理成流程图与时序图文档，业务方和新成员都要能看懂",
+      "expect": [
+        "路由到技术文档工程师（文档任务单角色直办）；业务流程步骤与业务规则真值源为 requirements-spec，交互时序真值源为 api-contract + architecture + 代码实现",
+        "流程图（Mermaid flowchart）覆盖端到端流程：触发者/前置条件/判断分支（标注承载它的 FR 编号，需求规格未覆盖的分支列 blocked_on）/异常与回退路径，不只画 happy path",
+        "关键场景时序图（Mermaid sequenceDiagram）参与方与 api-contract 端点归属、架构组件命名一致，调用消息标注契约端点，正常+失败分支成对（失败对应契约错误码）",
+        "流程-需求追踪矩阵双向可查：孤儿步骤与未被流程覆盖的 FR 如实列出；流程缺口列 blocked_on 回需求分析师，时序与契约不一致列 blocked_on 回架构师/后端",
+        "与 arc42 运行视图（架构视角）、用户故事行为场景（文字）互链不重复；图与代码实际行为不一致即为文档缺陷，不改图迁就现实也不改代码迁就图"
       ]
     }
   ]

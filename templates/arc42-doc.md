@@ -46,6 +46,7 @@
 
 - 关键场景时序 ≤5 个（Mermaid sequenceDiagram），覆盖正常 + 失败分支；
   场景取自需求规格核心场景。
+- 业务视角的流程图与时序见 `docs/business-process.md`（互链不重复）。
 
 ## 7. 部署视图
 

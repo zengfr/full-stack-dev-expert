@@ -63,7 +63,7 @@ full-stack-dev-expert/
 │   ├── security-engineer.md       #   安全工程师
 │   ├── code-reviewer.md           #   代码审查员
 │   ├── devops-engineer.md         #   DevOps 工程师
-│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/专业文档集/Runbook/CHANGELOG/部署文档）
+│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/专业文档集/业务流程与时序/Runbook/CHANGELOG/部署文档）
 ├── references/
 │   ├── constitution.md            # 软件工程宪法（最高效力，全体角色必读）
 │   ├── orchestration.md           # 调度协议：路由表、管理后台路由、裁剪、并行、门禁、失败处理
@@ -84,7 +84,7 @@ full-stack-dev-expert/
 │       ├── frontend-nextjs.md     #   Next.js App Router（Server/Client 纪律）
 │       ├── frontend-antd.md       #   Ant Design 5（管理后台 UI）
 │       └── frontend-tailwind-shadcn.md # Tailwind CSS + shadcn/ui
-├── templates/                     # 19 个交付物模板
+├── templates/                     # 20 个交付物模板
 │   ├── handoff-ticket.md          #   交接单（角色间唯一传递载体）
 │   ├── requirements-spec.md       #   需求规格
 │   ├── prd.md                     #   产品需求文档（真值源 requirements-spec）
@@ -95,6 +95,7 @@ full-stack-dev-expert/
 │   ├── ddd-design.md              #   领域设计与数据合同（限界上下文 → 模型 → 合同）
 │   ├── dev-standards.md           #   仓库结构与开发规范（含 monorepo 判定规则）
 │   ├── roadmap.md                 #   实施路线与里程碑（出口条件可验证）
+│   ├── business-process.md        #   业务流程与时序文档（流程图 + 时序图 + 追踪矩阵）
 │   ├── api-contract.md            #   API 契约
 │   ├── ui-spec.md                 #   UI/UX 规格
 │   ├── reverse-analysis.md        #   逆向分析报告（ORRI：证据档案/置信度/等价性测试）
@@ -104,7 +105,7 @@ full-stack-dev-expert/
 │   ├── runbook.md                 #   运维手册（告警响应/故障处置/应急预案）
 │   ├── changelog.md               #   变更日志（Keep a Changelog，项目根）
 │   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 18 个验收用例
+├── evals/evals.json               # 19 个验收用例
 └── FILES.md                       # 文件清单
 ```
 
@@ -126,7 +127,7 @@ full-stack-dev-expert/
   各有子路由；观察零推测、结论挂证据与置信度、净室纪律、合法性门禁前置、等价性测试门禁。
 - **契约先行**：架构阶段先出 API 契约草案，前端 Mock、后端实现、测试验证三方共用一份契约。
 - **文档工程**：架构文档集（arc42 + C4 + ADR 分离档案）与专业文档集
-  （PRD/用户故事与用例/领域设计/开发规范/路线图）每份单一真值源，
+  （PRD/用户故事与用例/领域设计/开发规范/路线图/业务流程与时序）每份单一真值源，
   技术文档工程师只转译不发明决策；INDEX.md 承担文档治理（类型/归属/更新触发/真值源映射/风险登记）。
 - **交接单唯一真值源**：跨阶段只认交接单与产出物，不认"我以为"；用户原话全程逐字透传。
 - **质量门禁**：每阶段有明确退出条件；同一阶段最多打回 2 次，第 3 次如实上报分歧。
@@ -136,6 +137,16 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.4.1（2026-11-13）：第九轮评审修复——业务流程与时序文档的"业务规则编号/GWT 编号"
+  引用改为 FR 编号及其验收标准（GWT）（requirements-spec 无独立规则/GWT 编号体系，
+  消除真值源缺口）；arc42 运行视图与用户故事模板补与 business-process 的双向互链；
+  roadmap 模板变更记录表分隔行笔误修复。
+- 1.4.0（2026-11-13）：技术文档工程师新增业务流程与时序文档能力：新增
+  templates/business-process.md（流程清单/业务流程图 flowchart/关键场景时序图
+  sequenceDiagram/流程-需求追踪矩阵；流程步骤真值源 requirements-spec，
+  交互时序真值源 api-contract + architecture + 代码实现；必画失败分支，
+  与 arc42 运行视图和用户故事行为场景互链不重复）；路由表与 pr-summary 角色表
+  同步；验收用例扩至 19 个（EVAL-19）。
 - 1.3.2（2026-11-13）：第八轮评审修复——roadmap 模板"变更记录"补与项目根
   CHANGELOG 的职责边界（记录路线图自身调整 vs 产品发布变更，不重复）。
 - 1.3.1（2026-11-13）：第七轮评审修复——"按需裁剪"措辞显式覆盖变更日志
