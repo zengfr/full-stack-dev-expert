@@ -11,7 +11,7 @@
 | 角色 | 状态（已启用/未启用+原因） | 产出 |
 |---|---|---|
 | 需求分析师 | | docs/requirements-spec.md |
-| 架构师 | | docs/architecture.md, docs/api-contract.md |
+| 架构师 | | docs/architecture.md, docs/api-contract.md, docs/adr/ |
 | UI/UX 设计师 | | docs/ui-spec.md |
 | 数据库工程师 | | docs/db-schema.sql + migrations/ |
 | 后端工程师 | | 服务端源代码 |
@@ -23,7 +23,7 @@
 | 安全工程师 | | docs/security-review.md |
 | 代码审查员 | | docs/review-report.md |
 | DevOps 工程师 | | docs/deploy-guide.md, CI/CD 配置 |
-| 技术文档工程师 | | README, API 文档 |
+| 技术文档工程师 | | README, API 文档, docs/arc42.md, docs/adr/ 索引 |
 
 ## 2. 交付物清单
 

@@ -31,7 +31,9 @@
 ```
 docs/
 ├── requirements-spec.md     # 需求规格（需求分析师产出）
-├── architecture.md          # 架构设计 + ADR（架构师产出）
+├── architecture.md          # 架构设计 + ADR 索引（架构师产出）
+├── arc42.md                 # 架构文档（arc42 + C4，技术文档工程师产出）
+├── adr/NNNN-*.md            # 分离式 ADR 档案（架构师决策时落档）
 ├── ui-spec.md               # UI/UX 规格（设计师产出，前端项目）
 ├── reverse-analysis.md      # 逆向分析报告（逆向融合工程师产出，ORRI）
 ├── api-contract.md          # API 契约（架构师起草，后端冻结）

@@ -38,6 +38,8 @@ references/standards/frontend-tailwind-shadcn.md
 templates/handoff-ticket.md
 templates/requirements-spec.md
 templates/architecture-design.md
+templates/arc42-doc.md
+templates/adr.md
 templates/api-contract.md
 templates/ui-spec.md
 templates/reverse-analysis.md

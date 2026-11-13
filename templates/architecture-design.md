@@ -3,7 +3,10 @@
 > 产出者：架构师。归档：`docs/architecture.md`。
 > 质量门禁：ADR 有被否方案；API 契约草案覆盖全部 FR；涉库改动有 Schema 草案。
 
-## 1. 技术选型 ADR
+## 1. 技术选型 ADR（本文件存索引与摘要）
+
+> 每条 ADR 决策时同步落 `docs/adr/NNNN-<slug>.md` 分离式档案（模板：`templates/adr.md`），
+> 完整记录以档案为准。
 
 ### ADR-1 <决策标题>（如：后端采用 Spring Boot 3）
 

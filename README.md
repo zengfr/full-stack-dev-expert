@@ -63,7 +63,7 @@ full-stack-dev-expert/
 │   ├── security-engineer.md       #   安全工程师
 │   ├── code-reviewer.md           #   代码审查员
 │   ├── devops-engineer.md         #   DevOps 工程师
-│   └── tech-writer.md             #   技术文档工程师
+│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/部署文档）
 ├── references/
 │   ├── constitution.md            # 软件工程宪法（最高效力，全体角色必读）
 │   ├── orchestration.md           # 调度协议：路由表、管理后台路由、裁剪、并行、门禁、失败处理
@@ -84,10 +84,12 @@ full-stack-dev-expert/
 │       ├── frontend-nextjs.md     #   Next.js App Router（Server/Client 纪律）
 │       ├── frontend-antd.md       #   Ant Design 5（管理后台 UI）
 │       └── frontend-tailwind-shadcn.md # Tailwind CSS + shadcn/ui
-├── templates/                     # 10 个交付物模板
+├── templates/                     # 12 个交付物模板
 │   ├── handoff-ticket.md          #   交接单（角色间唯一传递载体）
 │   ├── requirements-spec.md       #   需求规格
-│   ├── architecture-design.md     #   架构设计 + ADR
+│   ├── architecture-design.md    #   架构设计 + ADR 索引
+│   ├── arc42-doc.md               #   架构文档（arc42 12 章 + C4 分层图 + ADR 索引）
+│   ├── adr.md                     #   ADR 分离档案（一个决策一个文件，Nygard 格式）
 │   ├── api-contract.md            #   API 契约
 │   ├── ui-spec.md                 #   UI/UX 规格
 │   ├── reverse-analysis.md        #   逆向分析报告（ORRI：证据档案/置信度/等价性测试）
@@ -95,9 +97,8 @@ full-stack-dev-expert/
 │   ├── test-report.md             #   测试报告
 │   ├── deploy-guide.md            #   部署指南
 │   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 15 个验收用例
-├── FILES.md                       # 文件清单
-└── .version
+├── evals/evals.json               # 16 个验收用例
+└── FILES.md                       # 文件清单
 ```
 
 ## 使用方式
@@ -125,6 +126,16 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.2.7（2026-11-13）：第四轮评审修复——路由表"技术文档"行识别信号补架构文档
+  （arc42/C4/ADR）；pr-summary 角色启用表补架构文档集产出与架构师 adr/ 产出；
+  tech-writer 输入契约显式列 ADR 档案；交接字段 handoff_notes 补 C4 图对照与
+  ADR 索引状态核对结果。
+- 1.2.6（2026-11-13）：技术文档工程师新增架构文档集能力（arc42 + C4 + ADR 分离式）：
+  新增 templates/arc42-doc.md 与 templates/adr.md 模板；架构师 ADR 决策时落
+  docs/adr/ 分离档案（architecture.md 保留索引与摘要）；落盘清单补 arc42.md 与 adr/；
+  验收用例扩至 16 个（EVAL-16 架构文档集）。
+- 1.2.5（2026-11-13）：外部评审修复——移除 `.version` 文件（外部规范不允许）；
+  版本号唯一来源收敛为 SKILL.md metadata（同一信息只维护一处）；README 目录树同步。
 - 1.2.4（2026-11-13）：第三轮评审修复——宪法第 26 条措辞修订（"只读探测"改为"探测性
   请求不得携带用户工作区数据"，解除与 ORRI 探测实验的冲突；补供应链必需操作豁免）；
   第 27 条上报链级联（子角色→总指挥→用户）；reverse-fusion-dev 红线同步第 26 条新措辞；

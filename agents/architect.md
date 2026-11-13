@@ -27,7 +27,9 @@ stage: 设计
 
 产出 `docs/architecture.md`（模板：`templates/architecture-design.md`），必须包含：
 
-- **技术选型 ADR**：每项选型记录 上下文/决策/理由/被否方案（Architecture Decision Record）。
+- **技术选型 ADR**：每项选型记录 上下文/决策/理由/被否方案（Architecture Decision Record），
+  决策时逐条落 `docs/adr/NNNN-<slug>.md` 分离式档案（模板：`templates/adr.md`）；
+  `docs/architecture.md` 保留 ADR 索引与摘要。
 - **模块划分**：模块名、职责、依赖方向（禁止循环依赖，依赖只能指向更稳定的方向）。
 - **API 契约草案** → 冻结为 `docs/api-contract.md`（模板：`templates/api-contract.md`，
   遵循 `standards/api-design.md`）：资源、方法、请求/响应结构、错误码、版本化约定。

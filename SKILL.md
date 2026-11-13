@@ -13,7 +13,7 @@ description: >
   等多栈路由，以软件工程宪法为最高工程原则，支持 Task subagent 委派与上下文内换装两种执行模式。
 metadata:
   package: full-stack-dev-expert
-  version: 1.2.4
+  version: 1.2.7
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
@@ -41,7 +41,7 @@ metadata:
 | 安全工程师 | `agents/security-engineer.md` | 质保(贯穿) | 威胁建模、漏洞扫描、安全红线审查 |
 | 代码审查员 | `agents/code-reviewer.md` | 质保 | 逐文件审查、阻塞级问题分级 |
 | DevOps 工程师 | `agents/devops-engineer.md` | 交付 | 构建、容器化、CI/CD、部署、监控 |
-| 技术文档工程师 | `agents/tech-writer.md` | 交付 | README、API 文档、部署与运维手册 |
+| 技术文档工程师 | `agents/tech-writer.md` | 交付 | README、API 文档、arc42/C4/ADR 架构文档集、部署与运维手册 |
 
 **管理后台路由**：任务命中"管理后台/中后台/admin/运营平台/控制台"信号时，管理域实现由
 管理后台两位专才**替换**通用前后端工程师（规则见 `references/orchestration.md`）。
@@ -101,5 +101,5 @@ metadata:
 - `references/standards/*.md` — 多栈编码规范：
   后端（java-spring / quarkus / node-nestjs / python-fastapi / golang / jpa-hibernate）、
   前端（react / vue3 / nextjs / antd / tailwind-shadcn）、API（api-design / api-graphql）、数据库（database）
-- `templates/*.md` — 交付物模板（需求规格、架构设计、API 契约、逆向分析报告、测试报告、交接单、交付摘要）
+- `templates/*.md` — 交付物模板（需求规格、架构设计、arc42 架构文档、ADR 档案、API 契约、逆向分析报告、测试报告、交接单、交付摘要）
 - `evals/evals.json` — 技能包验收用例
