@@ -51,5 +51,7 @@ templates/reverse-analysis.md
 templates/test-plan.md
 templates/test-report.md
 templates/deploy-guide.md
+templates/runbook.md
+templates/changelog.md
 templates/pr-summary.md
 evals/evals.json

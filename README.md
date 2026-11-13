@@ -63,7 +63,7 @@ full-stack-dev-expert/
 │   ├── security-engineer.md       #   安全工程师
 │   ├── code-reviewer.md           #   代码审查员
 │   ├── devops-engineer.md         #   DevOps 工程师
-│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/专业文档集/部署文档）
+│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/专业文档集/Runbook/CHANGELOG/部署文档）
 ├── references/
 │   ├── constitution.md            # 软件工程宪法（最高效力，全体角色必读）
 │   ├── orchestration.md           # 调度协议：路由表、管理后台路由、裁剪、并行、门禁、失败处理
@@ -84,7 +84,7 @@ full-stack-dev-expert/
 │       ├── frontend-nextjs.md     #   Next.js App Router（Server/Client 纪律）
 │       ├── frontend-antd.md       #   Ant Design 5（管理后台 UI）
 │       └── frontend-tailwind-shadcn.md # Tailwind CSS + shadcn/ui
-├── templates/                     # 17 个交付物模板
+├── templates/                     # 19 个交付物模板
 │   ├── handoff-ticket.md          #   交接单（角色间唯一传递载体）
 │   ├── requirements-spec.md       #   需求规格
 │   ├── prd.md                     #   产品需求文档（真值源 requirements-spec）
@@ -101,8 +101,10 @@ full-stack-dev-expert/
 │   ├── test-plan.md               #   测试计划
 │   ├── test-report.md             #   测试报告
 │   ├── deploy-guide.md            #   部署指南
+│   ├── runbook.md                 #   运维手册（告警响应/故障处置/应急预案）
+│   ├── changelog.md               #   变更日志（Keep a Changelog，项目根）
 │   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 17 个验收用例
+├── evals/evals.json               # 18 个验收用例
 └── FILES.md                       # 文件清单
 ```
 
@@ -134,6 +136,13 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.3.1（2026-11-13）：第七轮评审修复——"按需裁剪"措辞显式覆盖变更日志
+  （tech-writer 工作流/交接字段、质量门禁 ⑥）；EVAL-18 runbook 真值源列表与
+  tech-writer 契约对齐（补可观测性基线与监控）；DevOps 交接字段标注运维素材位置。
+- 1.3.0（2026-11-13）：技术文档工程师新增运维文档能力：新增 templates/runbook.md
+  （运维手册：告警响应表/常见故障处置/例行操作 SOP/应急预案，真值源 DevOps 产出，
+  处置命令须经 DevOps 验证）与 templates/changelog.md（Keep a Changelog 格式，
+  落项目根）；DevOps 输出契约补运维素材供给；验收用例扩至 18 个（EVAL-18）。
 - 1.2.10（2026-11-13）：第六轮评审修复——ui-ux-designer 输出契约"组件复用清单"的
   五态列举与同文件最佳实践及 ui-spec 模板定义统一（默认/悬停或聚焦/激活/禁用/加载）。
 - 1.2.9（2026-11-13）：第五轮评审修复——pr-summary 角色启用表技术文档工程师行补

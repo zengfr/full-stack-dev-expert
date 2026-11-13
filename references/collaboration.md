@@ -47,6 +47,7 @@ docs/
 ├── security-review.md       # 安全审查报告（安全工程师产出）
 ├── review-report.md         # 代码审查报告（审查员产出）
 ├── deploy-guide.md          # 部署手册（DevOps 产出）
+├── runbook.md               # 运维手册（技术文档工程师产出，真值源 DevOps 产出）
 ├── INDEX.md                 # 文档索引与治理（技术文档工程师产出）
 └── handoffs/FS-*.md         # 历次交接单存档
 ```
