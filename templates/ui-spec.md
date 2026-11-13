@@ -18,6 +18,9 @@
 
 ## 3. 核心交互流（Mermaid）
 
+> 只画页面交互视角（单任务跨页反馈）；端到端业务全景流程见 `docs/business-process.md`
+> （互链不重复）。
+
 ```mermaid
 flowchart TD
   A[开始] --> B{条件}
