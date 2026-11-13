@@ -37,9 +37,14 @@ references/standards/frontend-antd.md
 references/standards/frontend-tailwind-shadcn.md
 templates/handoff-ticket.md
 templates/requirements-spec.md
+templates/prd.md
+templates/user-stories.md
 templates/architecture-design.md
 templates/arc42-doc.md
 templates/adr.md
+templates/ddd-design.md
+templates/dev-standards.md
+templates/roadmap.md
 templates/api-contract.md
 templates/ui-spec.md
 templates/reverse-analysis.md

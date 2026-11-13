@@ -31,9 +31,14 @@
 ```
 docs/
 ├── requirements-spec.md     # 需求规格（需求分析师产出）
+├── prd.md                   # 产品需求文档（技术文档工程师产出，真值源 requirements-spec）
+├── user-stories.md          # 用户故事与用例（技术文档工程师产出，真值源 requirements-spec）
 ├── architecture.md          # 架构设计 + ADR 索引（架构师产出）
 ├── arc42.md                 # 架构文档（arc42 + C4，技术文档工程师产出）
 ├── adr/NNNN-*.md            # 分离式 ADR 档案（架构师决策时落档）
+├── ddd-design.md            # 领域设计与数据合同（技术文档工程师产出）
+├── dev-standards.md         # 仓库结构与开发规范（技术文档工程师产出）
+├── roadmap.md               # 实施路线与里程碑（技术文档工程师产出）
 ├── ui-spec.md               # UI/UX 规格（设计师产出，前端项目）
 ├── reverse-analysis.md      # 逆向分析报告（逆向融合工程师产出，ORRI）
 ├── api-contract.md          # API 契约（架构师起草，后端冻结）
@@ -42,7 +47,7 @@ docs/
 ├── security-review.md       # 安全审查报告（安全工程师产出）
 ├── review-report.md         # 代码审查报告（审查员产出）
 ├── deploy-guide.md          # 部署手册（DevOps 产出）
-├── INDEX.md                 # 文档索引与阅读顺序（技术文档工程师产出）
+├── INDEX.md                 # 文档索引与治理（技术文档工程师产出）
 └── handoffs/FS-*.md         # 历次交接单存档
 ```
 

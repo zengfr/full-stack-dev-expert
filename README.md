@@ -63,7 +63,7 @@ full-stack-dev-expert/
 │   ├── security-engineer.md       #   安全工程师
 │   ├── code-reviewer.md           #   代码审查员
 │   ├── devops-engineer.md         #   DevOps 工程师
-│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/部署文档）
+│   └── tech-writer.md               #   技术文档工程师（README/API/arc42+C4+ADR/专业文档集/部署文档）
 ├── references/
 │   ├── constitution.md            # 软件工程宪法（最高效力，全体角色必读）
 │   ├── orchestration.md           # 调度协议：路由表、管理后台路由、裁剪、并行、门禁、失败处理
@@ -84,12 +84,17 @@ full-stack-dev-expert/
 │       ├── frontend-nextjs.md     #   Next.js App Router（Server/Client 纪律）
 │       ├── frontend-antd.md       #   Ant Design 5（管理后台 UI）
 │       └── frontend-tailwind-shadcn.md # Tailwind CSS + shadcn/ui
-├── templates/                     # 12 个交付物模板
+├── templates/                     # 17 个交付物模板
 │   ├── handoff-ticket.md          #   交接单（角色间唯一传递载体）
 │   ├── requirements-spec.md       #   需求规格
+│   ├── prd.md                     #   产品需求文档（真值源 requirements-spec）
+│   ├── user-stories.md            #   用户故事与用例（故事地图 + 追踪矩阵）
 │   ├── architecture-design.md    #   架构设计 + ADR 索引
 │   ├── arc42-doc.md               #   架构文档（arc42 12 章 + C4 分层图 + ADR 索引）
 │   ├── adr.md                     #   ADR 分离档案（一个决策一个文件，Nygard 格式）
+│   ├── ddd-design.md              #   领域设计与数据合同（限界上下文 → 模型 → 合同）
+│   ├── dev-standards.md           #   仓库结构与开发规范（含 monorepo 判定规则）
+│   ├── roadmap.md                 #   实施路线与里程碑（出口条件可验证）
 │   ├── api-contract.md            #   API 契约
 │   ├── ui-spec.md                 #   UI/UX 规格
 │   ├── reverse-analysis.md        #   逆向分析报告（ORRI：证据档案/置信度/等价性测试）
@@ -97,7 +102,7 @@ full-stack-dev-expert/
 │   ├── test-report.md             #   测试报告
 │   ├── deploy-guide.md            #   部署指南
 │   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 16 个验收用例
+├── evals/evals.json               # 17 个验收用例
 └── FILES.md                       # 文件清单
 ```
 
@@ -118,6 +123,9 @@ full-stack-dev-expert/
   核心设计并融合，六类场景（竞品能力/协议格式/重构摸底/未知代码库/UI 复刻/架构复刻）
   各有子路由；观察零推测、结论挂证据与置信度、净室纪律、合法性门禁前置、等价性测试门禁。
 - **契约先行**：架构阶段先出 API 契约草案，前端 Mock、后端实现、测试验证三方共用一份契约。
+- **文档工程**：架构文档集（arc42 + C4 + ADR 分离档案）与专业文档集
+  （PRD/用户故事与用例/领域设计/开发规范/路线图）每份单一真值源，
+  技术文档工程师只转译不发明决策；INDEX.md 承担文档治理（类型/归属/更新触发/真值源映射/风险登记）。
 - **交接单唯一真值源**：跨阶段只认交接单与产出物，不认"我以为"；用户原话全程逐字透传。
 - **质量门禁**：每阶段有明确退出条件；同一阶段最多打回 2 次，第 3 次如实上报分歧。
 - **安全一票否决**：仅限高危及以上，否决必须附带修复建议与工作量评估。
@@ -126,6 +134,17 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.2.9（2026-11-13）：第五轮评审修复——pr-summary 角色启用表技术文档工程师行补
+  专业文档集与 INDEX.md 产出；test-engineer 工作流"每轮出报告"补 FR 验收矩阵；
+  质量门禁 ⑥ 文档行补专业文档集真值源纪律；EVAL-17 开发规范与路线图真值源措辞
+  与模板对齐；README 设计要点补"文档工程"条目。
+- 1.2.8（2026-11-13）：技术文档工程师新增专业文档集能力（每份文档单一真值源、
+  只做转译不发明决策）：新增 templates/prd.md（产品需求文档）、
+  templates/user-stories.md（用户故事与用例）、templates/ddd-design.md
+  （领域设计与数据合同）、templates/dev-standards.md（仓库结构与开发规范）、
+  templates/roadmap.md（实施路线与里程碑）五个模板；test-report 新增 FR 验收矩阵
+  （FR 级验收状态汇总，验收口径唯一）；INDEX.md 升级为文档索引与治理；
+  验收用例扩至 17 个（EVAL-17 专业文档集）。
 - 1.2.7（2026-11-13）：第四轮评审修复——路由表"技术文档"行识别信号补架构文档
   （arc42/C4/ADR）；pr-summary 角色启用表补架构文档集产出与架构师 adr/ 产出；
   tech-writer 输入契约显式列 ADR 档案；交接字段 handoff_notes 补 C4 图对照与

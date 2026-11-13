@@ -23,7 +23,7 @@
 | 安全工程师 | | docs/security-review.md |
 | 代码审查员 | | docs/review-report.md |
 | DevOps 工程师 | | docs/deploy-guide.md, CI/CD 配置 |
-| 技术文档工程师 | | README, API 文档, docs/arc42.md, docs/adr/ 索引 |
+| 技术文档工程师 | | README, API 文档, docs/arc42.md, docs/adr/ 索引, 专业文档集（docs/prd.md, docs/user-stories.md, docs/ddd-design.md, docs/dev-standards.md, docs/roadmap.md，按需裁剪）, docs/INDEX.md |
 
 ## 2. 交付物清单
 
