@@ -22,8 +22,9 @@
 - variants 用 `cva` 定义在组件文件内；变体命名与令牌对齐（`size: sm|md|lg`）。
 - 组件登记制：`components/ui/` 目录即组件清单；页面不直接改 ui 组件内部，
   需差异化时包一层 business 组件（components/business/）。
-- 新增 shadcn 组件经 CLI 添加（`npx shadcn@<锁定版本> add <name>`），不手抄上游源码防漂移；
-  版本先锁定再执行，禁止 `@latest` 直接解析执行可变发布（供应链红线，见 stack-routing.md 第 5 节：
+- 新增 shadcn 组件经 CLI 添加（`npx shadcn@<x.y.z> add <name>`，版本号形如
+  `@2.4.0`——经 registry 查询后锁定进锁文件/ADR 再执行），不手抄上游源码防漂移；
+  禁止 `@latest` 与无版本后缀执行（供应链红线，见 stack-routing.md 第 5 节：
   只从官方源安装、锁文件提交、不运行未锁定版本）。
 
 ## 3. 可达性

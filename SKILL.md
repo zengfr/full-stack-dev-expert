@@ -13,7 +13,7 @@ description: >
   等多栈路由，以软件工程宪法为最高工程原则，支持 Task subagent 委派与上下文内换装两种执行模式。
 metadata:
   package: full-stack-dev-expert
-  version: 1.4.5
+  version: 1.4.6
   team-model: 1 chief-commander + 14 sub-agents
 ---
 

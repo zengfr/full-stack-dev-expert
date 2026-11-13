@@ -137,6 +137,11 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.4.6（2026-11-13）：外部评审第二轮修复——deploy-guide 回滚步骤补迁移回滚
+  破坏性警告（仅可逆迁移提供 down；down 前置：可逆性评估 + 已验证备份 + 用户
+  批准，宪法第 2 条），DevOps 工作流与 database.md 迁移纪律同步补可逆性标注
+  （不可逆迁移走前滚修复）；shadcn CLI 版本锁定措辞强化为显式 @x.y.z 后缀示例；
+  api-contract 与 deploy-guide 的两处外发提示复核仍为占位变量/localhost 误报，不改。
 - 1.4.5（2026-11-13）：第十三轮评审修复——外部评审同类脱敏缺口横向泛化：
   backend-dev 自测记录样例、test-engineer 缺陷报告复现数据、test-report 模板
   缺陷清单补脱敏纪律（真实令牌/账号/个人数据占位符呈现，宪法第 28 条）；
