@@ -15,7 +15,7 @@ description: >
   当用户要求完善/评审/进化本技能包自身时按 references/self-evolution.md 协议执行。
 metadata:
   package: full-stack-dev-expert
-  version: 1.6.0
+  version: 1.6.4
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
