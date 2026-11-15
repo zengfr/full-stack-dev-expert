@@ -12,6 +12,9 @@ references/ui-patterns/product-site.md
 references/ui-patterns/open-source-site.md
 references/ui-patterns/ecommerce.md
 references/ui-patterns/admin-console.md
+references/self-evolution.md
+knowledge/README.md
+knowledge/lessons.md
 agents/requirements-analyst.md
 agents/architect.md
 agents/ui-ux-designer.md
@@ -60,4 +63,5 @@ templates/deploy-guide.md
 templates/runbook.md
 templates/changelog.md
 templates/pr-summary.md
+templates/evolution-report.md
 evals/evals.json

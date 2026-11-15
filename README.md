@@ -75,6 +75,7 @@ full-stack-dev-expert/
 │   │   ├── open-source-site.md    #   开源项目官网（快速上手/文档/暗色模式）
 │   │   ├── ecommerce.md           #   电商商城（商详 IA/下单漏斗/信任合规）
 │   │   └── admin-console.md       #   后台管理（列表页模式/查改流/防误操作）
+│   ├── self-evolution.md          # 技能自进化协议（提示词触发/轮次参数/五步循环/保护门禁）
 │   └── standards/                 # 14 份多栈编码规范
 │       ├── api-design.md          #   REST API 设计（契约唯一依据）
 │       ├── api-graphql.md         #   GraphQL（ADR 门槛 + DataLoader/复杂度/持久化查询）
@@ -90,7 +91,7 @@ full-stack-dev-expert/
 │       ├── frontend-nextjs.md     #   Next.js App Router（Server/Client 纪律）
 │       ├── frontend-antd.md       #   Ant Design 5（管理后台 UI）
 │       └── frontend-tailwind-shadcn.md # Tailwind CSS + shadcn/ui
-├── templates/                     # 20 个交付物模板
+├── templates/                     # 21 个交付物模板
 │   ├── handoff-ticket.md          #   交接单（角色间唯一传递载体）
 │   ├── requirements-spec.md       #   需求规格
 │   ├── prd.md                     #   产品需求文档（真值源 requirements-spec）
@@ -110,8 +111,12 @@ full-stack-dev-expert/
 │   ├── deploy-guide.md            #   部署指南
 │   ├── runbook.md                 #   运维手册（告警响应/故障处置/应急预案）
 │   ├── changelog.md               #   变更日志（Keep a Changelog，项目根）
-│   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 21 个验收用例
+│   ├── pr-summary.md              #   交付摘要
+│   └── evolution-report.md        #   技能自进化报告（会话参数/逐轮评审表/汇总/下轮建议）
+├── knowledge/                     # 经验知识库（L3 正反参考池，写入只经自进化协议）
+│   ├── README.md                  #   KB 治理：分级/条目格式/准入/升级/退出
+│   └── lessons.md                 #   任务沉淀与评审发现（KB 条目 + 提案池）
+├── evals/evals.json               # 22 个验收用例
 └── FILES.md                       # 文件清单
 ```
 
@@ -124,6 +129,11 @@ full-stack-dev-expert/
 
 ## 设计要点
 
+- **技能自进化**：提示词触发（`自进化 N轮 焦点=<域> 模式=<评审|沉淀|横向|纵向>`），
+  按轮次执行 探测→提案→自我评审→落盘→报告 五步循环；知识分级（L1 强制/L2 推荐/L3 参考）
+  与来源准入（无来源进提案池待验证，不发明知识）；经验知识库 `knowledge/` 沉淀正反参考
+  （L3 被 ≥3 任务验证后升级 L2 并评估合入规范层）；宪法与 evals 变更须用户显式批准，
+  评审清单 7 项硬门禁 + 1 项软门禁（单一真值源/引用闭环/evals 回归/版本纪律）保证进化不劣化。
 - **站点类型模式路由**：UI/UX 设计师开工先判定站点类型（企业官网/产品官网/开源项目
   官网/电商商城/后台管理），加载 `references/ui-patterns/` 对应模式展开类型专属
   页面 IA、核心交互流失败分支与反模式自查；混合站点逐端判定，未命中类型用通用骨架
@@ -147,6 +157,16 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.6.0（2026-11-15）：新增技能自进化能力：此前技能包完善依赖外部人工逐轮评审驱动
+  （历史 16 轮均为被动修复）；新增 `references/self-evolution.md` 自进化协议
+  （提示词触发"自进化/自我评审/skill evolve"、轮次 1-5/焦点/模式四参数、
+  探测→提案→自我评审→落盘→报告每轮五步、评审清单 7 硬 1 软门禁、宪法与 evals
+  变更须用户显式批准、>5 轮拒绝与模式 B ≤2 轮的上下文防护）；新增 `knowledge/`
+  经验知识库（L1/L2/L3 分级、条目格式挂来源与正反例、无来源进提案池待验证、
+  L3 经 ≥3 任务验证升级 L2 合入规范层、证伪条目留痕不删），种子条目 6 条由历史
+  版本记录与用户反馈提炼（评审发现 5 + 用户反馈 1）；新增 templates/evolution-report.md
+  自进化报告模板（会话参数/逐轮提案评审表/会话汇总/下轮建议）；SKILL.md 自进化路由 +
+  orchestration 路由表同步；验收用例扩至 22 个（EVAL-22 技能自进化协议）。
 - 1.5.0（2026-11-15）：UI/UX 设计新增站点类型模式路由：此前 ui-spec 只有一份通用模板，
   不同站点类型（企业官网/产品官网/开源项目官网/电商商城/后台管理）的 UI/UX 差异
   无模式支撑；新增 `references/ui-patterns/` 五类模式文件（各含适用信号/设计目标/

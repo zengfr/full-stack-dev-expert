@@ -11,9 +11,11 @@ description: >
   覆盖 Java/Spring Boot、Quarkus、Node.js/NestJS、Python/FastAPI、Golang、React、Vue3、Next.js、
   Ant Design、Tailwind CSS + shadcn/ui、JPA/Hibernate、MySQL/PostgreSQL/Redis、REST/GraphQL
   等多栈路由，以软件工程宪法为最高工程原则，支持 Task subagent 委派与上下文内换装两种执行模式。
+  支持提示词触发的按轮次技能自进化（自我评审、知识库沉淀、横向扩展、纵向深化）：
+  当用户要求完善/评审/进化本技能包自身时按 references/self-evolution.md 协议执行。
 metadata:
   package: full-stack-dev-expert
-  version: 1.5.0
+  version: 1.6.0
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
@@ -50,6 +52,12 @@ metadata:
 竞品分析、未知代码库摸底、重构前现状画像）时，一律先经**逆向融合工程师**按 ORRI 方法论
 完成观察与逆向，再按场景子路由移交下游角色；合法性门禁不通过立即终止（规则见
 `references/orchestration.md` 逆向融合路由规则）。
+
+**技能自进化路由**：任务显式指向**本技能包自身**的完善/评审/进化（命中"自进化/
+自我进化/自我评审/skill evolve"且对象是技能包、知识库、角色、协议本身）时，
+总指挥按 `references/self-evolution.md` 协议执行——解析轮次/焦点/模式参数，
+每轮走 探测→提案→自我评审→落盘→报告；这是总指挥的元任务，**不走项目流水线**，
+宪法与 evals 变更须用户显式批准。
 
 ## 执行模式（先探测，再开工）
 
@@ -103,5 +111,9 @@ metadata:
   前端（react / vue3 / nextjs / antd / tailwind-shadcn）、API（api-design / api-graphql）、数据库（database）
 - `references/ui-patterns/*.md` — 站点类型 UI 模式（UI/UX 设计师按站点类型路由加载）：
   企业官网 / 产品官网 / 开源项目官网 / 电商商城 / 后台管理
-- `templates/*.md` — 交付物模板（需求规格、PRD、用户故事与用例、架构设计、arc42 架构文档、ADR 档案、领域设计、开发规范、路线图、业务流程与时序、API 契约、逆向分析报告、测试报告、运维手册、变更日志、交接单、交付摘要）
+- `references/self-evolution.md` — 技能自进化协议：提示词触发、轮次/焦点/模式参数、
+  探测→提案→自我评审→落盘→报告五步循环、评审清单与宪法/evals 保护
+- `knowledge/*.md` — 经验知识库（L3 正反参考池）：任务沉淀与评审发现的分级条目，
+  写入只经自进化协议（治理见 `knowledge/README.md`）
+- `templates/*.md` — 交付物模板（需求规格、PRD、用户故事与用例、架构设计、arc42 架构文档、ADR 档案、领域设计、开发规范、路线图、业务流程与时序、API 契约、逆向分析报告、测试报告、运维手册、变更日志、交接单、交付摘要、自进化报告）
 - `evals/evals.json` — 技能包验收用例
