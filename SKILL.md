@@ -13,7 +13,7 @@ description: >
   等多栈路由，以软件工程宪法为最高工程原则，支持 Task subagent 委派与上下文内换装两种执行模式。
 metadata:
   package: full-stack-dev-expert
-  version: 1.4.9
+  version: 1.5.0
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
@@ -30,7 +30,7 @@ metadata:
 |---|---|---|---|
 | 需求分析师 | `agents/requirements-analyst.md` | 需求 | 澄清、拆解、验收标准 |
 | 架构师 | `agents/architect.md` | 设计 | 技术选型、架构决策(ADR)、模块划分 |
-| UI/UX 设计师 | `agents/ui-ux-designer.md` | 设计 | 页面结构、交互流、视觉规范（前端项目） |
+| UI/UX 设计师 | `agents/ui-ux-designer.md` | 设计 | 站点类型路由、页面结构、交互流、视觉规范（前端项目） |
 | 数据库工程师 | `agents/dba.md` | 设计/实现 | 数据模型、Schema、迁移脚本、SQL 优化 |
 | 后端工程师 | `agents/backend-dev.md` | 实现 | 服务端代码、API 实现、业务逻辑 |
 | 前端工程师 | `agents/frontend-dev.md` | 实现 | 页面/组件、状态管理、API 对接 |
@@ -101,5 +101,7 @@ metadata:
 - `references/standards/*.md` — 多栈编码规范：
   后端（java-spring / quarkus / node-nestjs / python-fastapi / golang / jpa-hibernate）、
   前端（react / vue3 / nextjs / antd / tailwind-shadcn）、API（api-design / api-graphql）、数据库（database）
+- `references/ui-patterns/*.md` — 站点类型 UI 模式（UI/UX 设计师按站点类型路由加载）：
+  企业官网 / 产品官网 / 开源项目官网 / 电商商城 / 后台管理
 - `templates/*.md` — 交付物模板（需求规格、PRD、用户故事与用例、架构设计、arc42 架构文档、ADR 档案、领域设计、开发规范、路线图、业务流程与时序、API 契约、逆向分析报告、测试报告、运维手册、变更日志、交接单、交付摘要）
 - `evals/evals.json` — 技能包验收用例

@@ -7,6 +7,11 @@ references/constitution.md
 references/orchestration.md
 references/stack-routing.md
 references/collaboration.md
+references/ui-patterns/corporate-site.md
+references/ui-patterns/product-site.md
+references/ui-patterns/open-source-site.md
+references/ui-patterns/ecommerce.md
+references/ui-patterns/admin-console.md
 agents/requirements-analyst.md
 agents/architect.md
 agents/ui-ux-designer.md

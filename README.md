@@ -69,6 +69,12 @@ full-stack-dev-expert/
 │   ├── orchestration.md           # 调度协议：路由表、管理后台路由、裁剪、并行、门禁、失败处理
 │   ├── stack-routing.md           # 技术栈路由：栈指纹、选型决策树、UI 层选型
 │   ├── collaboration.md           # 协作协议：交接单、冲突仲裁、落盘约定
+│   ├── ui-patterns/               # 5 类站点类型 UI 模式（UI/UX 设计师路由加载）
+│   │   ├── corporate-site.md      #   企业官网（留资转化/案例/信任背书）
+│   │   ├── product-site.md        #   产品官网（转化漏斗/定价页/注册下载）
+│   │   ├── open-source-site.md    #   开源项目官网（快速上手/文档/暗色模式）
+│   │   ├── ecommerce.md           #   电商商城（商详 IA/下单漏斗/信任合规）
+│   │   └── admin-console.md       #   后台管理（列表页模式/查改流/防误操作）
 │   └── standards/                 # 14 份多栈编码规范
 │       ├── api-design.md          #   REST API 设计（契约唯一依据）
 │       ├── api-graphql.md         #   GraphQL（ADR 门槛 + DataLoader/复杂度/持久化查询）
@@ -105,7 +111,7 @@ full-stack-dev-expert/
 │   ├── runbook.md                 #   运维手册（告警响应/故障处置/应急预案）
 │   ├── changelog.md               #   变更日志（Keep a Changelog，项目根）
 │   └── pr-summary.md              #   交付摘要
-├── evals/evals.json               # 19 个验收用例
+├── evals/evals.json               # 21 个验收用例
 └── FILES.md                       # 文件清单
 ```
 
@@ -118,6 +124,10 @@ full-stack-dev-expert/
 
 ## 设计要点
 
+- **站点类型模式路由**：UI/UX 设计师开工先判定站点类型（企业官网/产品官网/开源项目
+  官网/电商商城/后台管理），加载 `references/ui-patterns/` 对应模式展开类型专属
+  页面 IA、核心交互流失败分支与反模式自查；混合站点逐端判定，未命中类型用通用骨架
+  + 最接近模式参照并回报确认——不同类型 UI/UX 差异不靠临场发挥。
 - **宪法至上**：`references/constitution.md` 定义 29 条工程宪法与冲突优先级
   （正确性与数据安全 > 安全 > 契约与诚实 > 简单 > 交付速度），效力高于一切协议文件。
 - **管理后台专才路由**：admin-frontend-dev / admin-backend-dev 替换通用前后端工程师，
@@ -137,6 +147,13 @@ full-stack-dev-expert/
 
 ## 版本
 
+- 1.5.0（2026-11-15）：UI/UX 设计新增站点类型模式路由：此前 ui-spec 只有一份通用模板，
+  不同站点类型（企业官网/产品官网/开源项目官网/电商商城/后台管理）的 UI/UX 差异
+  无模式支撑；新增 `references/ui-patterns/` 五类模式文件（各含适用信号/设计目标/
+  页面 IA 模板/首屏公式/核心交互流失败分支/类型组件/视觉基调/信任合规/度量建议/
+  反模式红线），ui-ux-designer 增第 5 节站点类型路由（混合站点逐端判定、未命中
+  类型参照+回报），ui-spec 模板增 §0 站点类型标注与 §8 类型专属规格；
+  验收用例扩至 21 个（EVAL-21 站点类型模式路由）。
 - 1.4.9（2026-11-13）：第十六轮评审修复——宪法第 21 条"三次法则"（复制第二次
   容忍、第三次必须抽取、反对过早抽象）此前全包零概念锚定，补入代码审查员最佳实践；
   同轮验证：宪法 29 条引用反查（数字引用 10 条均有真值源语义匹配，其余条款概念
