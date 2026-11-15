@@ -32,7 +32,7 @@ C 端高定制场景不适用（走 frontend-tailwind-shadcn.md）。
 
 - 命令式 API（message/notification/Modal.confirm）统一经 `App` 上下文
   （`App.useApp()`）调用，禁止静态方法直调（ConfigProvider 主题不生效）。
-- 异步五态齐备：空（Empty/Table locale）/载（Table loading + 查询按钮 loading）/
+- 异步四态齐备：空（Empty/Table locale）/载（Table loading + 查询按钮 loading）/
   错（错误页+重试）/禁（无权限 disabled+tooltip）。
 - 路由级 loading 与数据级 loading 分开（页面骨架 ≠ 表格 loading）。
 

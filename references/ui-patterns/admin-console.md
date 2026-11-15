@@ -2,6 +2,7 @@
 
 > 站点类型模式之一：由 `agents/ui-ux-designer.md` 站点类型路由加载。
 > 本文件定**设计侧**要求：描述行为与外观，不绑定具体 UI 库组件名（设计师红线）。
+> 通用要求（五态、四全局态、4.5:1 对比度、44px 点击区）见 `templates/ui-spec.md`，不重复。
 > 实现层由管理后台双角色承载（路由规则见 `references/orchestration.md`
 > 管理后台路由规则；实现规范见 `references/standards/frontend-antd.md`），
 > 与本文件互链不重复。

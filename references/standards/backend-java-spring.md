@@ -22,7 +22,7 @@ src/main/java/<pkg>/
 
 ## 2. 分层规则
 
-- Controller：只做 校验（`@Valid` + JSR-303 注解）、调 service、组装响应；不碰 Repository。
+- Controller：只做 校验（`@Valid` + Jakarta Bean Validation（JSR-380）注解）、调 service、组装响应；不碰 Repository。
 - Service：业务规则与事务（`@Transactional` 只标在需要事务的方法上，只读方法 `readOnly=true`）；
   不感知 HTTP 对象（HttpServletRequest 禁止入参穿透到 service）。
 - Mapper/Repository：只写数据访问；禁止写业务判断与远程调用。

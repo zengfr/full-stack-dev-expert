@@ -60,7 +60,7 @@ docs/
 docs/ 之外的归档例外（本节为归档位置唯一真值源，模板头部仅自述）：
 `CHANGELOG.md` 落**项目根**（与 README 同级，不入 docs/）；技能自进化报告
 （`templates/evolution-report.md`）会话内交付，**不归档**（元任务不属于任何项目，
-未采纳提案清单随 README 版本记录留痕）。
+未采纳提案清单随 git 提交信息留痕）。
 
 ## 3. 冲突仲裁
 

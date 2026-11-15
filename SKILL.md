@@ -15,7 +15,7 @@ description: >
   当用户要求完善/评审/进化本技能包自身时按 references/self-evolution.md 协议执行。
 metadata:
   package: full-stack-dev-expert
-  version: 1.6.4
+  version: 1.7.0
   team-model: 1 chief-commander + 14 sub-agents
 ---
 
@@ -115,5 +115,5 @@ metadata:
   探测→提案→自我评审→落盘→报告五步循环、评审清单与宪法/evals 保护
 - `knowledge/*.md` — 经验知识库（L3 正反参考池）：任务沉淀与评审发现的分级条目，
   写入只经自进化协议（治理见 `knowledge/README.md`）
-- `templates/*.md` — 交付物模板（需求规格、PRD、用户故事与用例、架构设计、arc42 架构文档、ADR 档案、领域设计、开发规范、路线图、业务流程与时序、API 契约、逆向分析报告、测试报告、运维手册、变更日志、交接单、交付摘要、自进化报告）
+- `templates/*.md` — 交付物模板（需求规格、UI 规格、PRD、用户故事与用例、架构设计、arc42 架构文档、ADR 档案、领域设计、开发规范、路线图、业务流程与时序、API 契约、逆向分析报告、测试计划、测试报告、部署手册、运维手册、变更日志、交接单、交付摘要、自进化报告）
 - `evals/evals.json` — 技能包验收用例

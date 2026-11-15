@@ -30,7 +30,7 @@ src/main/resources/application.properties   # 配置（环境变量覆盖 ${ENV:
 ## 3. REST 端点
 
 - 端点声明：`@Path("/api/v1/...")` + JAX-RS 注解；参数校验用 Hibernate Validator
-  （`@Valid` + JSR-303），不手写空判断散落各处。
+  （`@Valid` + Jakarta Bean Validation（JSR-380）），不手写空判断散落各处。
 - 统一响应：Response 包装 + 统一错误结构（ExceptionMapper 映射业务异常 → 契约错误 JSON）。
 - RESTEasy Reactive（`@Path` + `@GET` 默认 reactive 语义）：阻塞操作显式 worker 线程
   （方法签名声明返回类型即决定调度，禁止在 reactive 端点里做阻塞 IO）。
@@ -55,7 +55,8 @@ src/main/resources/application.properties   # 配置（环境变量覆盖 ${ENV:
 ## 6. 测试
 
 - `@QuarkusTest` 集成测试（Dev Services 自动起依赖容器）；业务规则单测不依赖容器。
-- native 测试（`@NativeImageTest`）仅 CI 关键路径执行，本地不强制。
+- native 测试（`@QuarkusIntegrationTest`，Quarkus 3.x 现行注解，旧 `@NativeImageTest` 已移除）
+  仅 CI 关键路径执行，本地不强制。
 
 ## 7. 质量命令
 

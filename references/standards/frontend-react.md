@@ -40,7 +40,7 @@ src/
 - 状态分层：组件内 UI 态（useState）/ 跨组件域态（Context 或 Zustand）/
   服务端数据（TanStack Query 优先，禁手写 loading/error 样板）。
 - 服务端数据与 UI 状态分仓；服务端数据不在本地深拷贝改写。
-- 异步组件五态：数据态必须显式处理 loading/error/empty/success，
+- 异步组件四态：数据态必须显式处理 loading/error/empty/success，
   用 query 的 isLoading/isError 语义，不搞布尔拼接。
 
 ## 5. 性能与可达性

@@ -36,7 +36,8 @@
 - 并发更新实体加 `@Version`（Long/Instant）；捕获 `OptimisticLockException` 映射 409。
 - 审计字段 `createdAt`/`updatedAt`：Spring 用 Auditing（`@CreatedDate`），
   Quarkus 用 `@PrePersist`/`@PreUpdate`；应用层不可篡改。
-- 逻辑删除 `deletedAt` 过滤：Hibernate `@Filter`/`@Where` 统一注入，
+- 逻辑删除 `deletedAt` 过滤：Hibernate `@Filter` 统一注入（`@Where` 于 Hibernate 6.3+
+  已弃用将移除；Hibernate 6.6+ 软删场景可用 `@SoftDelete`），
   禁止每个查询手写 `and deleted_at is null`。
 
 ## 5. 分页与性能
